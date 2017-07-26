@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Banana;
+  src: url(/fonts/banana-reg.otf);
+}
+
+body {
+  font-family: Banana;
+  padding: 0;
+}
+
+.main-cta {
+  margin-top: 18vh;
+  margin-bottom: 4.125vh;
+  font-size: 42px;
+}
+/* BEGIN EDITING BLOCK*/
+
+#success-panel {
+  background-color: #F4E764;
+  -webkit-transition: all 1.5s; // Chrome
+  -moz-transition: all 1.5s; // Mozilla
+  -o-transition: all 1.5s; // Opera
+  transition: all 1.5s;
+  position:relative;
+}
+
+.success-text {
+  font-size: 42px;
+  width: 500px;
+  top: 22.5%;
+}
+
+.success-exit {
+  font-size: 40px;
+  right: 13px;
+  top: 0;
+}
+
+.slidein {
+  right: 0%;
+}
+
+.slideout {
+  right: 50%;
+}
+.hidden {
+  z-index:-100;
+}
+/* END EDITING BLOCK */
+.cloud {
+  position: absolute;
+}
+
+.main-logo {
+  margin-top: 20vh;
+}
+
+.bottomline {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+}
+
+.joinline {
+  margin-top: 10vh;
+  margin-bottom: 5.5vh;
+}
+
+.signupline {
+  margin-top: 4.125vh;
+}
+
+.btn-container {
+  margin-top: 16.13vh;
+}
+
+.full-height {
+  height: 100vh;
+  position: relative;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.landing {
+  background-color: #5be76b;
+  overflow: hidden;
+}
+
+.submit-btn {
+  height: 42px;
+  background: #fff;
+  border: solid 1px #000000;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  height: 42px;
+  border: 0;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.65);
+}
+
+.selector {
+  height: 42px;
+  border: 0;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.65);
+  background: transparent;
+  border-radius: 0px;
+  text-align: left;
+  min-width: 177px;
+}
+
+.select-caret {
+  float: right;
+}
+
+.select-container {
+
+}
+
+.contact-btn {
+  height: 42px;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.cloud-one {
+  top: 10.625%;
+  animation: cloudone 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-two {
+  top: 22%;
+  animation: cloudtwo 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-three {
+  top: 30%;
+  animation: cloudthree 45s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloudone {
+  from {
+    right: -10%;
+  } to {
+    right: 100%;
+  }
+}
+
+@keyframes cloudtwo {
+  from {
+    left: -10%;
+  } to {
+    left: 100%;
+  }
+}
+
+@keyframes cloudthree {
+  from {
+    right: -30%;
+  } to {
+    right: 120%;
+  }
+}
+
+.mobile-cta {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .mobile-cta {
+    margin-top: 20vh;
+    color: #fff;
+    line-height: 1.38;
+    font-size: 35px;
+    display: block;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .main-cta {
+    display: none;
+  }
+
+  .contact-btn {
+    width: 40%;
+  }
+
+  .submit-btn {
+    width: 40%;
+  }
+
+}
