@@ -22,18 +22,22 @@ body {
   -moz-transition: all 1.5s; // Mozilla
   -o-transition: all 1.5s; // Opera
   transition: all 1.5s;
+  display:none;
 }
 
 .success-text {
   font-size: 42px;
   width: 500px;
   top: 22.5%;
+  text-align:center;
 }
 
 .success-exit {
+  position:relative;
   font-size: 40px;
-  right: 13px;
+  left: 95%;
   top: 0;
+  cursor: pointer;
 }
 
 .slidein {
@@ -105,6 +109,9 @@ body {
 	100% {
 		-webkit-transform: translateX(0%);
 	}
+}
+.dropdown{
+  cursor:pointer;
 }
 /* END EDITING BLOCK */
 .cloud {
