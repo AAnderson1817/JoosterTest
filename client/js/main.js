@@ -6,9 +6,10 @@ const successpanel = $('#success-panel');
 //Functions
 function swapPanels(){
   console.log("Working!");
+  successpanel[0].style.display = "block";
   successpanel.toggleClass('slideRight').toggleClass('ztop').toggleClass('zbot');
 }
 
 //Event Listeners
-$(window).on('click', swapPanels);
+signup.on('click', swapPanels);
 $(window).on('click', )
