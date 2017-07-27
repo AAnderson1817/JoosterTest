@@ -16,12 +16,12 @@ body {
 /* BEGIN EDITING BLOCK*/
 
 #success-panel {
+  position:absolute;
   background-color: #F4E764;
   -webkit-transition: all 1.5s; // Chrome
   -moz-transition: all 1.5s; // Mozilla
   -o-transition: all 1.5s; // Opera
   transition: all 1.5s;
-  position:relative;
 }
 
 .success-text {
@@ -43,8 +43,68 @@ body {
 .slideout {
   right: 50%;
 }
-.hidden {
-  z-index:-100;
+.hidden{
+  width:0;
+}
+.ztop{
+  z-index: 1;
+}
+.zbot{
+  z-index: -1;
+}
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
 }
 /* END EDITING BLOCK */
 .cloud {
