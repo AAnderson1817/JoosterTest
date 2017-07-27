@@ -6,12 +6,11 @@ const successexit = $('#success-exit');
 
 //Functions
 function swapPanels(){
-  console.log("Working!");
   successpanel[0].style.display = "block";
-  successpanel.addClass('slideRight').addClass('zmid').removeClass('zbot').removeClass('hidden');
+  successpanel.addClass('slideRight').addClass('zmid').addClass('col-lg-offset-6').removeClass('zbot').removeClass('hidden').removeClass('slideLeft');
 }
 function closePanel(){
-  successpanel.addClass('hidden');
+  successpanel.removeClass('slideRight').removeClass('col-lg-offset-6').addClass('slideLeft');
 }
 
 //So that our checkSlide function doesn't trigger like crazy, we use debounce to limit the number of times a call can be made over a certain timeframe. Currently, any function wrapped in debounce can only fire once every 20 ms, as defined by the 'wait' argument. I've since reduced the wait time to 5ms in order to smooth the transition.
@@ -31,6 +30,7 @@ function closePanel(){
 //     if (callNow) func.apply(context, args);
 //   };
 // }
+
 //BEGIN SLIDE IN FUNCTION
 
 //const sliderItems = document.querySelectorAll('.slide-in')
