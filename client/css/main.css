@@ -22,7 +22,7 @@ body {
   -moz-transition: all 1.5s; // Mozilla
   -o-transition: all 1.5s; // Opera
   transition: all 1.5s;
-  display:none;
+  display: none;
 }
 
 .success-text {
