@@ -302,8 +302,9 @@ body {
   }
 
   .main-logo {
-    margin-top:0;
-    width:150px;
+    top:5px;
+    left:5px;
+    width:120px;
   }
   .cloud-one {
     top: 10.625%;
@@ -326,7 +327,7 @@ body {
     animation: cloudthree 25s;
   }
   #trees{
-    top:50%;
+    bottom:5%;
   }
 
 }
