@@ -1,0 +1,44 @@
+body{
+  box-sizing:border-box;
+}
+.fullheight{
+  height:100vh;
+}
+.eightyheight{
+  height:90vh;
+}
+.threequarterheight{
+  height:75vh;
+}
+.halfheight{
+  height:50vh;
+}
+.quarterheight{
+  height:25vh;
+}
+.tenheight{
+  height:10vh;
+}
+.fiveheight{
+  height:5vh;
+}
+.green{
+  background-color:green;
+}
+.purple{
+  background-color:purple;
+}
+.red{
+background-color:red;
+}
+.blue{
+  background-color:blue;
+}
+.greenhover:hover{
+  background-color:green;
+  border:1px solid lime;
+}
+#logo{
+  color:white;
+  font-size:20px;
+}
