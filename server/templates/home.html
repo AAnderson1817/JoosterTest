@@ -5,44 +5,55 @@
     <title>Jooster</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/test.css">
   </head>
   <body>
-    <div class="container-fluid no-padding"></div>
-      <div class="row tenheight no-padding" id="treepanel">
+    <div class="container-fluid fullheight no-padding">
+
+      <div class="row tenheight no-padding margin-top-small" id="treepanel">
             <!--LOGO -->
-            <p class="col-xs-3 fiveheight blue" id="logo">
-              JOOSTER
-            </p>
-            <button type="button" name="button" class="col-xs-3 col-xs-offset-6 fiveheight blue">
+            <img class="col-xs-3 fiveheight" id="logo" src="img/jooster-logo.svg" alt="JoosterLogo"/>
+            <button type="button" name="button" class="col-xs-2 col-xs-offset-7 fiveheight joostergreen">
               Sign Up
             </button>
-      <div class="row eightyheight purple" id="joinus">
-          <button type="button" name="button" class="col-xs-12">Slogan</button>
       </div>
-      <div class="row tenheight green" id="treebanner">
-        <div class="col-xs-12">
-          <button type="button" name="button" class="col-xs-12">Trees</button>
-        </div>
+
+
+      <div class="row eightyheight joostergreen" id="joinus">
+          <p class="col-xs-7 col-xs-offset-2 whitetext fontmed">On-the-go nutrition <br> for anytime, anywhere.</p>
       </div>
-      <div class="row fullheight" id="signuppanel">
+
+
+      <div class="row tenheight" id="treebanner">
+        <image class="col-xs-12 joostergreen" id="trees"src='img/bottomline.svg'>
+      </div>
+    </div>
+
+    <!--Begin Signup Panel-->
+    <div class="container-fluid no-padding white">
+
+      <div class="row" id="signuppanel">
         <div class="col-xs-12 quarterheight" id="signuptextdiv">
-          <p class="col-xs-12">Some text here about joining!</p>
-          <p class="col-xs-9">Shorter text!</p>
+          <p class="col-xs-8 col-xs-offset-1">Sign up to receive updates and be the first to hear when we launch!</p>
         </div>
         <div class="col-xs-12 halfheight purple">
           <form class="col-xs-12" action="index.html" method="post">
             <input type="text" name="" value="" placeholder="Name">
+            <input type="email" name="" value="" placeholder="Email">
           </form>
         </div>
 
-        <div class="col-xs-12 quarterheight red" id="botbuttondiv">
+        <div class="col-xs-12 quarterheight" id="botbuttondiv">
           <span class="col-xs-1"></span>
           <button type="button" name="button" class="col-xs-5 green greenhover">Sign Up</button>
           <button type="button" name="button" class="col-xs-5 green">Contact Us</button>
           <span class="col-xs-1"></span>
         </div>
+      </div>
+    </div>
+    <!--End Signup Panel-->
   </body>
 </html>

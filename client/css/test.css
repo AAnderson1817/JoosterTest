@@ -1,5 +1,13 @@
+@font-face {
+  font-family: Banana;
+  src: url(/fonts/banana-reg.otf);
+}
+
 body{
   box-sizing:border-box;
+  overflow-x:hidden;
+  font-family:Banana;
+  background-color: #5be76b;
 }
 .fullheight{
   height:100vh;
@@ -20,13 +28,22 @@ body{
   height:10vh;
 }
 .fiveheight{
-  height:5vh;
+  height:2em;
+}
+.margin-top-small{
+  margin-top:2em;
+}
+.margin-top-med{
+  margin-top:4em;
+}
+.joostergreen{
+    background-color: #5be76b;
 }
 .green{
   background-color:green;
 }
 .purple{
-  background-color:purple;
+  background-color: purple;
 }
 .red{
 background-color:red;
@@ -34,11 +51,20 @@ background-color:red;
 .blue{
   background-color:blue;
 }
+.white{
+  background-color: #fff;
+}
 .greenhover:hover{
   background-color:green;
   border:1px solid lime;
 }
-#logo{
-  color:white;
-  font-size:20px;
+.whitetext{
+  color:#fff;
+}
+.fontmed{
+  font-size:2.5em;
+}
+
+#joinus{
+  padding-top:5em;
 }
